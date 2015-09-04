@@ -13,5 +13,19 @@
       <li>Then print the message the user wrote into the <code>body</code> tag wrapped around an <code>h1</code> tag</li>
       <li>Finally, change the <code>title</code> tag with the contents of the message</li>
     </ul>
+    <script type="text/javascript">
+      var message = prompt("Hello World");
+
+      alert(message);
+
+      var body = document.getElementsByTagName('body');
+
+      body.innerHTML = message;
+
+      var title = document.querySelector('title');
+
+      title.innerHTML = message;
+    </script>
+
   </body>
 </html>
